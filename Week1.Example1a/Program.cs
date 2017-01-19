@@ -3,14 +3,11 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Text;
     using System.Threading.Tasks;
-    public class Program
+    class Program
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="args"></param>
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             int valeurLue;
 
@@ -25,7 +22,7 @@
             }
             else
             {
-                Console.WriteLine("... c'est une valeur impaire");
+
             }
         }
     }
