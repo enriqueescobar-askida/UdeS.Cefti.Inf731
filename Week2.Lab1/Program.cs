@@ -8,9 +8,8 @@
     using Common.Lab;
     class Program
     {
-        // En plaçant les constantes ici, elles sont disponibles à tous
-        // les sous-programmes de la classe Program ce qui évite
-        // de les définir plusieurs fois.
+        // En plaçant les constantes ici, elles sont disponibles à tous les sous-programmes de la classe Program
+        // ce qui évite de les définir plusieurs fois.
         const int LIRE_INFORMATION = 1;
         const int AFFICHER_INFORMATION = 2;
         const int CELEBRER_ANNIVERSAIRE = 3;
@@ -45,7 +44,7 @@
                     }
                 case AFFICHER_INFORMATION:
                     {
-                        employe.AfficherInformations();
+                        Console.WriteLine(employe.ToString());
                         break;
                     }
                 case CELEBRER_ANNIVERSAIRE:

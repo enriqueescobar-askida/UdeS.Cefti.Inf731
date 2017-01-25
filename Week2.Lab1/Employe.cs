@@ -1,4 +1,4 @@
-﻿namespace Common.Lab
+﻿namespace Week2.Lab1
 {
     using System;
     using System.Collections.Generic;
@@ -29,9 +29,9 @@
             //    faisons pas d'âgisme.
             const int AGE_MINIMAL_EMBAUCHE = 16;
 
-            System.Console.Write("Donnez le nom de l'employé    : ");
+            Console.Write("Donnez le nom de l'employé    : ");
             nom_ = Console.ReadLine();
-            System.Console.Write("Donnez le prénom de l'employé : ");
+            Console.Write("Donnez le prénom de l'employé : ");
             prenom_ = Console.ReadLine();
 
             Console.Write("Donnez l'âge de l'employé     : ");
@@ -56,29 +56,28 @@
             return CalculerAnneesAvantRetraite() <= 0;
         }
 
-        // Cette méthode aurait pu être privée aussi, si on avait voulu
-        // ne pas en donner l'accès aux instances de la classe
+        // Cette méthode aurait pu être privée aussi, si on avait voulu ne pas en donner l'accès aux instances de la classe
         public int CalculerAnneesAvantRetraite()
         {
             const int FACTEUR_MINIMAL_REQUIS = 90;
 
-            // On transforme la soustraction en 'float' pour provoquer une division réelle
-            // sinon on aurait une division entière et une valeur 12,5 deviendrait 12 ce qui serait
-            // incorrect
+            // On transforme la soustraction en 'float' pour provoquer une division réelle sinon on aurait une division entière et
+            // une valeur 12,5 deviendrait 12 ce qui serait incorrect
             float nbAnnées = (float)(FACTEUR_MINIMAL_REQUIS - (age_ + experience_)) / 2;
 
-            // par contre, comme la valeur de retour de la méthode est 'int', il faut prendre le
-            // résultat qui est un réel et le transformer en entier
+            // par contre, comme la valeur de retour de la méthode est 'int', il faut prendre le résultat qui est un réel et le transformer en entier
             return (int)Math.Ceiling(nbAnnées);
         }
 
-        public void AfficherInformations()
+        public override string ToString()
         {
-            Console.WriteLine();
-            Console.WriteLine("  Nom et prénom de l'employé : {0}, {1}", nom_, prenom_);
-            Console.WriteLine("            Âge de l'employé : {0}", age_);
-            Console.WriteLine("Nombre d'années d'expérience : {0}", experience_);
-            Console.WriteLine();
+            string s = "\n";
+            s += "  Nom et prénom de l'employé : " + nom_ + ", " + prenom_ + "\n";
+            s += "            Âge de l'employé : " + age_ + "\n";
+            s += "Nombre d'années d'expérience : " + experience_ + "\n";
+            s += "\n";
+
+            return s;
         }
     }
 }
