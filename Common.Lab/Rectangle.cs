@@ -55,15 +55,13 @@
             }
         }
 
-        public void Afficher()
+        public String Afficher()
         {
-            // Note : lorsqu'une propriété existe, on préfère accéder à la valeur de l'attribut
-            // via la propriété associée
-            System.Console.WriteLine("La largeur est de {0} et la hauteur de {1}", Largeur, Hauteur);
+            // Note : lorsqu'une propriété existe, on préfère accéder à la valeur de l'attribut via la propriété associée
+            return "La largeur est de " + Largeur + " et la hauteur de " + Hauteur;
         }
 
-        // mutateur ("setter") : méthode qui permet de modifier un attribut
-        // forme traditionnelle
+        // mutateur ("setter") : méthode qui permet de modifier un attribut forme traditionnelle
         public void SetLargeur(int uneLargeur)
         {
             if (uneLargeur >= LARGEUR_MIN && uneLargeur <= LARGEUR_MAX)
