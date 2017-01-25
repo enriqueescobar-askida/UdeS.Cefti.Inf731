@@ -5,10 +5,10 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using Common.Lab;
      
     class Program
     {
-
         const int QUITTER = 0;
         const int CONSERVER_F = 1;
         const int CONSERVER_C = 2;
@@ -38,7 +38,6 @@
         }
 
         // permet d'afficher le menu proposé dans le laboratoire
-        //------------------------------------------------------------------------
         static void AfficherMenu()
         {
             Console.WriteLine(TITRE);
@@ -54,7 +53,6 @@
 
 
         // permet d'obtenir de l'utilisateur une réponse validée au menu
-        //------------------------------------------------------------------------
         static int ObtenirChoix()
         {
             int choix;
@@ -80,7 +78,6 @@
         }
 
         // permet de traiter le choix de l'utilisateur
-        //------------------------------------------------------------------------
         static void TraiterChoixObtenu(int reponse, Temperature temp)
         {
             double valeurLue;
@@ -95,14 +92,14 @@
                 case CONSERVER_C:
                     Console.Write("Donnez la temperature en Celsius : ");
                     valeurLue = double.Parse(Console.ReadLine());
-                    temp.Métrique = valeurLue;
+                    temp.Metrique = valeurLue;
                     break;
                 case OBTENIR_F:
                     Console.WriteLine("La temperature en Fahrenheit est de {0}", temp.Anglaise);
                     Console.WriteLine();
                     break;
                 case OBTENIR_C:
-                    Console.WriteLine("La temperature en Celsius est de {0}", temp.Métrique);
+                    Console.WriteLine("La temperature en Celsius est de {0}", temp.Metrique);
                     Console.WriteLine();
                     break;
                 default:
