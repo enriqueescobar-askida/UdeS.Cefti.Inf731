@@ -9,6 +9,8 @@
     {
         int nbMl;
 
+        public string Couleur { get; set; }
+
         public void Afficher()
         {
             Console.WriteLine("Cette tasse contient {0} ml", nbMl);

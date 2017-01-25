@@ -36,6 +36,10 @@
             thirdCup.Afficher();
             thirdCup.Initialiser(-111);
             thirdCup.Afficher();
+
+            Cup aCup = new Week2.Cup.Cup();
+            aCup.Couleur = "White";
+            Console.WriteLine("This cup is " + aCup.Couleur);
         }
     }
 }
