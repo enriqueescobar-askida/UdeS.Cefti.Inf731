@@ -1,19 +1,19 @@
-﻿namespace Week2.Cup
+﻿namespace Common.Lab
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-    class Cup
+    public class Cup
     {
         int nbMl;
 
         public string Couleur { get; set; }
 
-        public void Afficher()
+        public override string ToString()
         {
-            Console.WriteLine("Cette tasse contient {0} ml", nbMl);
+            return "Cette tasse contient " + nbMl + " ml";
         }
 
         /// <summary>

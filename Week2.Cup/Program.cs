@@ -5,6 +5,7 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using Common.Lab;
     class Program
     {
         static void Main(string[] args)
@@ -13,7 +14,7 @@
             // à leur valeur par défaut; ici, la valeur par défaut d'un entier est 0
             //----------------------------------------------------------
             Cup whatever = new Cup();
-            whatever.Afficher();
+            Console.WriteLine(whatever.ToString());
 
             // Nous allons créer plusieurs instances d'une même classe Chaque instance de classe
             // (chaque objet) pourra être atteint à l'aide de sa référence;
@@ -25,20 +26,22 @@
             // si on n'indique rien) référence sur une Cup
             Cup firstCup = new Cup();
             firstCup.Initialiser(200);
-            firstCup.Afficher();
+            Console.WriteLine(firstCup.ToString());
 
             Cup secondCup = new Cup();
             secondCup.Initialiser(167);
-            secondCup.Afficher();
+            Console.WriteLine(secondCup.ToString());
 
             Cup thirdCup = new Cup();
             thirdCup.Initialiser(567);
-            thirdCup.Afficher();
+            Console.WriteLine(thirdCup.ToString());
             thirdCup.Initialiser(-111);
-            thirdCup.Afficher();
+            Console.WriteLine(thirdCup.ToString());
 
-            Cup aCup = new Week2.Cup.Cup();
-            aCup.Couleur = "White";
+            Cup aCup = new Cup
+            {
+                Couleur = "White"
+            };
             Console.WriteLine("This cup is " + aCup.Couleur);
         }
     }
