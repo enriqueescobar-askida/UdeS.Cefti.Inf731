@@ -21,27 +21,11 @@
         //    outils que nous avions vu à la séance #2 pour faire une
         //    solution conforme à ce que vous pouviez faire.
 
-        public void LireInformation()
+        public void LireInformation(string nom, string prenom, int age)
         {
-            //--- Nous considérerons anormal qu'un employé soit embauché
-            //    avant un certain âge minimal, ici fixé à 16 ans.
-            //    Nous pourrions fixer un âge maximal aussi mais ne
-            //    faisons pas d'âgisme.
-            const int AGE_MINIMAL_EMBAUCHE = 16;
-
-            Console.Write("Donnez le nom de l'employé    : ");
-            nom_ = Console.ReadLine();
-            Console.Write("Donnez le prénom de l'employé : ");
-            prenom_ = Console.ReadLine();
-
-            Console.Write("Donnez l'âge de l'employé     : ");
-            age_ = int.Parse(Console.ReadLine());
-            while (age_ < AGE_MINIMAL_EMBAUCHE)
-            {
-                Console.WriteLine(" *** L'âge de l'employé ne peut être inférieur à {0} ***", AGE_MINIMAL_EMBAUCHE);
-                Console.Write("Donnez l'âge de l'employé     : ");
-                age_ = int.Parse(Console.ReadLine());
-            }
+            nom_ = nom;
+            prenom_ = prenom;
+            age_ = age;
             experience_ = 0;
         }
 

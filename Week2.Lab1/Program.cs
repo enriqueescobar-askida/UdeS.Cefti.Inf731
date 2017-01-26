@@ -18,6 +18,11 @@
         const int DERNIER_CHOIX = PEUT_PARTIR_POUR_RETRAITE;
         const int QUITTER = 0;
         const string MESSAGE_PEUT_PARTIR_POUR_RETRAITE = "Peut partir à la retraite ?";
+        //--- Nous considérerons anormal qu'un employé soit embauché
+        //    avant un certain âge minimal, ici fixé à 16 ans.
+        //    Nous pourrions fixer un âge maximal aussi mais ne
+        //    faisons pas d'âgisme.
+        const int AGE_MINIMAL_EMBAUCHE = 16;
 
         static void Main(string[] args)
         {
@@ -39,12 +44,24 @@
             {
                 case LIRE_INFORMATION:
                     {
-                        employe.LireInformation();
+                        Console.Write("Donnez le nom de l'employé    : ");
+                        string nom = Console.ReadLine();
+                        Console.Write("Donnez le prénom de l'employé : ");
+                        string prenom = Console.ReadLine();
+                        Console.Write("Donnez l'âge de l'employé     : ");
+                        int age = int.Parse(Console.ReadLine());
+                        while (age < AGE_MINIMAL_EMBAUCHE)
+                        {
+                            Console.WriteLine(" *** L'âge de l'employé ne peut être inférieur à {0} ***", AGE_MINIMAL_EMBAUCHE);
+                            Console.Write("Donnez l'âge de l'employé     : ");
+                            age = int.Parse(Console.ReadLine());
+                        }
+                        employe.LireInformation(nom, prenom, age);
                         break;
                     }
                 case AFFICHER_INFORMATION:
                     {
-                        Console.WriteLine(employe.ToString());
+                        Console.WriteLine(employe);
                         break;
                     }
                 case CELEBRER_ANNIVERSAIRE:
