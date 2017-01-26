@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cup.cs" />
+    <Compile Include="Employe.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Temperature.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

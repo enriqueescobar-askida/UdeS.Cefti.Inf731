@@ -1,4 +1,4 @@
-﻿namespace Week2.Lab1
+﻿namespace Common.Lab
 {
     using System;
     using System.Collections.Generic;
