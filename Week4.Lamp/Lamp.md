@@ -19,3 +19,13 @@ Du point de vue de l’utilisateur, la classe présente les méthodes et les pro
 2.  Une méthode Brancher() qui, lorsqu’elle est appelée sur un objet de classe Lampe, permet de ‘brancher’ la lampe à une prise électrique. Il va de soi que dans le cadre de cet exercice, ce branchement est virtuel.
 3.  Une méthode Debrancher() qui, lorsqu’elle est appelée sur un objet de classe Lampe, permet de ‘débrancher’ la lampe de la prise électrique. Il va de soi que dans le cadre de cet exercice, ce débranchement est virtuel.
 4.  Une méthode Toucher() qui, lorsqu’elle est appelée sur un objet de classe Lampe, augmente l’intensité de l’éclairage. Il faut se rappeler toutefois que ce type de lampe est cyclique, c’est-à-dire qu’après l’intensité la plus forte, le prochain toucher fera en sorte d’éteindre la lampe.
+
+Pour valider le bon fonctionnement de votre classe, je vous fournis un programme client qui offrira le menu suivant à l’utilisateur :
+
+<IMG>
+
+INF-731  Programmation Orientée Objet  Hiver 2017     par Pierre Prud'homme - 2 -  Notez la séquence des choses : au point de départ, la lampe est débranchée. Il faut donc que l’utilisateur commence par la brancher. Au branchement, elle sera éteinte.  Puis, une fais branchée, chaque appel à la méthode Toucher() qui correspond à un toucher du pied de la lampe en augmente l’intensité. Après la pleine intensité, un toucher éteint la lampe.
+
+<IMG>
+
+Je vous ai fait parvenir le programme client permettant d’utiliser la classe. Il vous reste à développer la classe qui se trouvera dans le fichier Lampe.cs  Bon laboratoire.
