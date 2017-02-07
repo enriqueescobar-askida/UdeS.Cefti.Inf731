@@ -37,8 +37,12 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Car.cs" />
+    <Compile Include="CarWithEnumColors.cs" />
     <Compile Include="Cup.cs" />
     <Compile Include="Employe.cs" />
+    <Compile Include="EnumColors.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Lamp.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Temperature.cs" />

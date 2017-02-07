@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Week3.Demo
+﻿namespace Week3.Demo
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using Common.Lab;
     class Program
     {
         /*
@@ -32,13 +32,13 @@ namespace Week3.Demo
         static void Main(string[] args)
         {
             RunCar();
-            //RunCarEnum();
+            RunCarEnum();
         }
 
         static void RunCar()
         {
-            Voiture v1 = new Voiture();
-            Voiture v2 = new Voiture();
+            Car v1 = new Car();
+            Car v2 = new Car();
 
             v1.Immatriculation = "3j53n1";
             v1.Couleur = "Bleu";
@@ -64,29 +64,32 @@ namespace Week3.Demo
             Console.ReadLine();
         }
 
-        static void AfficherVoiture(Voiture voiture)
+        static void AfficherVoiture(Car voiture)
         {
             Console.WriteLine("Immatriculation: {0}", voiture.Immatriculation);
             Console.WriteLine("Couleur: {0}", voiture.Couleur);
             Console.WriteLine("Kilometrage: {0}km", voiture.Kilometrage);
         }
 
-        /*static void RunCarEnum()
+        static void RunCarEnum()
         {
-            VoitureEnum v1 = new VoitureEnum();
-            VoitureEnum v2 = new VoitureEnum();
+            CarWithEnumColors v1 = new CarWithEnumColors
+            {
+                Immatriculation = "3j53n1",
+                Couleur = EnumColors.Blue,
+                Marque = "Ford"
+            };
 
-            v1.Immatriculation = "3j53n1";
-            v1.Couleur = Colors.Bleu; //enum
-            v1.Marque = "Ford";
+            CarWithEnumColors v2 = new CarWithEnumColors
+            {
+                Immatriculation = "p53l2m",
+                Couleur = EnumColors.Red,
+                Marque = "Porsche"
+            };
 
-            v2.Immatriculation = "p53l2m";
-            v2.Couleur = Colors.Rouge; //enum
-            v2.Marque = "Porsche";
-
-            AfficherVoitureEnum(v1);
+            AfficherEnumCar(v1);
             Console.WriteLine("-------------");
-            AfficherVoitureEnum(v2);
+            AfficherEnumCar(v2);
             Console.WriteLine();
             Console.WriteLine(v1.ParcourirDistance(44));
             Console.WriteLine(v1.ParcourirDistance(7000));
@@ -94,17 +97,17 @@ namespace Week3.Demo
             Console.WriteLine(v2.ParcourirDistance(12));
             Console.WriteLine(v2.ParcourirDistance(128));
             Console.WriteLine();
-            AfficherVoitureEnum(v1);
+            AfficherEnumCar(v1);
             Console.WriteLine("-------------");
-            AfficherVoitureEnum(v2);
+            AfficherEnumCar(v2);
             Console.ReadLine();
         }
 
-        static void AfficherVoitureEnum(VoitureEnum voitureEnum)
+        static void AfficherEnumCar(CarWithEnumColors voitureEnum)
         {
             Console.WriteLine("Immatriculation: {0}", voitureEnum.Immatriculation);
             Console.WriteLine("Couleur: {0}", voitureEnum.Couleur);
             Console.WriteLine("Kilometrage: {0}km", voitureEnum.Kilometrage);
-        }*/
+        }
     }
 }

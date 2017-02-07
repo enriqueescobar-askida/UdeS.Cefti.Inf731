@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Week3.Demo
+﻿namespace Common.Lab
 {
-    public class VoitureEnum
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    public class Car
     {
-        //Propriétés
         public string Immatriculation { get; set; }
 
-        public Colors Couleur { get; set; }
+        public string Couleur { get; set; }
 
         public int Kilometrage
         {
@@ -37,7 +35,7 @@ namespace Week3.Demo
             if (kilometresParcouru > 0)
             {
                 s = String.Format("La voiture {0} parcourt {1}km", this.Immatriculation, kilometresParcouru);
-                Kilometrage = Kilometrage + kilometresParcouru;
+                this.Kilometrage = this.Kilometrage + kilometresParcouru;
             }
 
             return s;

@@ -43,6 +43,15 @@
                 Couleur = "White"
             };
             Console.WriteLine("This cup is " + aCup.Couleur);
+
+            Cup cupOne = new Cup();
+            cupOne.Initialiser(256);
+            Cup cupTwo = new Cup();
+            cupTwo.Initialiser(110);
+            Cup cupThree = new Cup();
+            cupThree.Initialiser(467);
+            Console.WriteLine("La tasse la plus pleine contient : {0} ml", Cup.MaxCapacity);
+            Console.ReadLine();
         }
     }
 }
