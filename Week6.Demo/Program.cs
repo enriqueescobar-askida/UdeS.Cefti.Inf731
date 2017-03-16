@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Week6.Demo
+﻿namespace Week6.Demo
 {
+    using System;
+
     class Program
     {
         const char SEPARATEUR = ' ';

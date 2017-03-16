@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Car.cs" />
+    <Compile Include="CarStatic.cs" />
     <Compile Include="CarWithEnumColors.cs" />
     <Compile Include="Cup.cs" />
     <Compile Include="Employe.cs" />
@@ -48,9 +49,10 @@
     <Compile Include="Rectangle.cs" />
     <Compile Include="Temperature.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.cs" />
     <Compile Include="Triangle.cs" />
-    <Compile Include="VoitureCouleurInvalideException.cs" />
-    <Compile Include="VoitureModeleInvalideException.cs" />
+    <Compile Include="InvalidColorException.cs" />
+    <Compile Include="InvalidModelException.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

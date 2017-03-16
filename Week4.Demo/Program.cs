@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Week4.Demo
+﻿namespace Week4.Demo
 {
+    using System;
+    using Common.Lab;
     class Program
     {
         static void Main(string[] args)
         {
-            Voiture voiture = new Voiture();
-            voiture.ReservoirEssence = Voiture.CAPACITE_RESERVOIR_ESSENCE;
+            CarStatic voiture = new CarStatic();
+            voiture.ReservoirEssence = CarStatic.CapaciteReservoirEssence;
 
             AfficherVoiture(voiture);
             Console.WriteLine("==============================");
@@ -32,11 +28,11 @@ namespace Week4.Demo
             AfficherVoiture(voiture);
         }
 
-        static void AfficherVoiture(Voiture voiture)
+        static void AfficherVoiture(CarStatic voiture)
         {
-            Console.WriteLine("Reservoir global: {0}/{1} litres", Voiture.ReservoirEssenceGlobal, Voiture.CAPACITE_RESERVOIR_ESSENCE_GLOBAL);
+            Console.WriteLine("Reservoir global: {0}/{1} litres", CarStatic.ReservoirEssenceGlobal, CarStatic.CapaciteReservoirEssenceGlobal);
             Console.WriteLine("Kilométrage de la voiture: {0}km", voiture.Kilometrage);
-            Console.WriteLine("Essence de la voiture: {0}/{1} litres", voiture.ReservoirEssence, Voiture.CAPACITE_RESERVOIR_ESSENCE);
+            Console.WriteLine("Essence de la voiture: {0}/{1} litres", voiture.ReservoirEssence, CarStatic.CapaciteReservoirEssence);
         }
     }
 }

@@ -1,75 +1,39 @@
 ﻿namespace Common.Lab
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
     public class Operation
     {
         public Operation(string operateur, int valeur1, int valeur2)
         {
-            Operateur = operateur;
-            Valeur1 = valeur1;
-            Valeur2 = valeur2;
+            this.Operateur = operateur;
+            this.Valeur1 = valeur1;
+            this.Valeur2 = valeur2;
         }
 
-        public int Valeur1
-        {
-            get
-            {
-                return valeur1_;
-            }
-            set
-            {
-                valeur1_ = value;
-            }
-        }
+        public int Valeur1 { get; set; }
 
-        public int Valeur2
-        {
-            get
-            {
-                return valeur2_;
-            }
-            set
-            {
-                valeur2_ = value;
-            }
-        }
+        public int Valeur2 { get; set; }
 
-        public string Operateur
-        {
-            get
-            {
-                return operateur_;
-            }
-            set
-            {
-                operateur_ = value;
-            }
-        }
+        public string Operateur { get; set; }
 
         public int Resultat
         {
             get
             {
-                if (Operateur == "+")
+                if (this.Operateur == "+")
                 {
-                    return Valeur1 + Valeur2;
+                    return this.Valeur1 + this.Valeur2;
                 }
-                else if (Operateur == "-")
+                else if (this.Operateur == "-")
                 {
-                    return Valeur1 - Valeur2;
+                    return this.Valeur1 - this.Valeur2;
                 }
-                else if (Operateur == "*")
+                else if (this.Operateur == "*")
                 {
-                    return Valeur1 * Valeur2;
+                    return this.Valeur1 * this.Valeur2;
                 }
-                else if (Operateur == "/")
+                else if (this.Operateur == "/")
                 {
-                    return Valeur1 / Valeur2;
+                    return this.Valeur1 / this.Valeur2;
                 }
                 else
                 {
@@ -78,9 +42,5 @@
                 }
             }
         }
-
-        private int valeur1_;
-        private int valeur2_;
-        private string operateur_;
     }
 }

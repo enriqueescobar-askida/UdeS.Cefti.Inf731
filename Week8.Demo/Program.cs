@@ -2,22 +2,19 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     using Common.Lab;
     class Program
     {
         static void Main(string[] args)
         {
-            List<Voiture> voitures = LireVoitures();
+            List<Car> voitures = LireVoitures();
             EcrireVoitures(voitures);
         }
 
-        static List<Voiture> LireVoitures()
+        static List<Car> LireVoitures()
         {
-            List<Voiture> voitures = new List<Voiture>();
+            List<Car> voitures = new List<Car>();
 
             bool lectureTermine = false; //la lecture n'est pas terminée
             while (!lectureTermine) //tant que la lecture n'est pas terminée
@@ -39,15 +36,15 @@
                         Console.Write("Entrer le kilometrage de la voiture {0}: ", voitures.Count + 1);
                         int kilometrage = int.Parse(Console.ReadLine());
 
-                        Voiture nouvelleVoiture = new Voiture(modele, couleur, kilometrage);
+                        Car nouvelleVoiture = new Car(modele, kilometrage, couleur);
                         voitures.Add(nouvelleVoiture);
                     }
                 }
-                catch (VoitureCouleurInvalideException ex)
+                catch (InvalidColorException ex)
                 {
                     Console.WriteLine("Couleur invalide!");
                 }
-                catch (VoitureModeleInvalideException ex)
+                catch (InvalidModelException ex)
                 {
                     Console.WriteLine("Modele invalide!");
                 }
@@ -60,10 +57,10 @@
             return voitures;
         }
 
-        static void EcrireVoitures(List<Voiture> voitures)
+        static void EcrireVoitures(List<Car> voitures)
         {
             Console.WriteLine("{0} voitures", voitures.Count);
-            foreach (Voiture voiture in voitures)
+            foreach (Car voiture in voitures)
             {
                 Console.WriteLine("{0} {1} {2}km", voiture.Modele, voiture.Couleur, voiture.Kilometrage);
             }
