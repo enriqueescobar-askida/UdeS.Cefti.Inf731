@@ -4,34 +4,31 @@
 
     public class Rectangle
     {
-
-        const int HAUTEUR_MAX = 30;
-        const int LARGEUR_MAX = 79;
-
-        const int HAUTEUR_MIN = 2;
-        const int LARGEUR_MIN = 2;
-
-        // Attributs
+        const int HauteurMax = 30;
+        const int LargeurMax = 79;
+        const int HauteurMin = 2;
+        const int LargeurMin = 2;
+        
         int largeur;
         int hauteur;
-
-        // Propriétés pour fournir l'accesseur et le mutateur
-        // Chaque attribut se voit associer une propriété pour
-        // lui fournir un accesseur et / ou un mutateur
         public int Largeur
         {
             get
             {
-                return largeur;
+                return this.largeur;
             }
             set
             {
-                // rappel : value correspond à la valeur qui se trouve à droite du
-                // symbole d'affectation dans le programme client.
-
-                if (value >= LARGEUR_MIN && value <= LARGEUR_MAX)
+                if (value >= LargeurMin && value <= LargeurMax)
                 {
-                    largeur = value;
+                    this.largeur = value;
+                }
+                else
+                {
+                    if (this.largeur == 0)
+                    {
+                        this.largeur = LargeurMin;
+                    }
                 }
             }
         }
@@ -40,37 +37,55 @@
         {
             get
             {
-                return hauteur;
+                return this.hauteur;
             }
-            set   // rappel : si je mets le set 'private', il devient impossible d'affecter
-                  // une valeur à la propriété dans le programme client
+            set
             {
-                if (value >= HAUTEUR_MIN && value <= HAUTEUR_MAX)
+                if (value >= HauteurMin && value <= HauteurMax)
                 {
-                    hauteur = value;
+                    this.hauteur = value;
+                }
+                else
+                {
+                    if (this.hauteur == 0)
+                    {
+                        this.hauteur = HauteurMin;
+                    }
                 }
             }
         }
 
+        public Rectangle(Rectangle original)
+        {
+            this.Largeur = original.Largeur;
+            this.Hauteur = original.Hauteur;
+        }
+        public Rectangle(int largeur = LargeurMin, int hauteur = HauteurMin)
+        {
+            this.Largeur = largeur;
+            this.Hauteur = hauteur;
+        }
+
         public String Afficher()
         {
-            // Note : lorsqu'une propriété existe, on préfère accéder à la valeur de l'attribut via la propriété associée
-            return "La largeur est de " + Largeur + " et la hauteur de " + Hauteur;
+            return "La largeur est de " + this.Largeur + " et la hauteur de " + this.Hauteur;
         }
-
-        // mutateur ("setter") : méthode qui permet de modifier un attribut forme traditionnelle
+        public static int AireMaximale()
+        {
+            return LargeurMax * HauteurMax;
+        }
+        
         public void SetLargeur(int uneLargeur)
         {
-            if (uneLargeur >= LARGEUR_MIN && uneLargeur <= LARGEUR_MAX)
+            if (uneLargeur >= LargeurMin && uneLargeur <= LargeurMax)
             {
-                largeur = uneLargeur;
+                this.largeur = uneLargeur;
             }
         }
-
-        // accesseur ("getter") : méthode qui permet d'obtenir la valeur d'un attribut
+        
         public int GetLargeur()
         {
-            return largeur;
+            return this.largeur;
         }
     }
 }
