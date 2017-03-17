@@ -1,10 +1,7 @@
 ﻿namespace Week4.Lamp
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+
     using Common.Lab;
     class Program
     {
@@ -52,10 +49,7 @@
             Console.WriteLine("{0}. {1}", QUITTER, MSG_QUITTER);
             Console.WriteLine("********************************************************************");
         }
-
-
-        // permet d'obtenir de l'utilisateur une réponse validée au menu
-        //------------------------------------------------------------------------
+        
         static int ObtenirChoix()
         {
             int choix;
@@ -80,8 +74,6 @@
             return choix;
         }
 
-        // permet de traiter le choix de l'utilisateur
-        //------------------------------------------------------------------------
         static void TraiterChoixObtenu(int reponse, Lamp lamp)
         {
             switch (reponse)

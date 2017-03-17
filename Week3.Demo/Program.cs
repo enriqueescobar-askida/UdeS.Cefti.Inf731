@@ -5,27 +5,6 @@
     using Common.Lab;
     class Program
     {
-        /*
-        * Exemple avec classe de base comprenant données membres, méthodes et propriétés
-        * À noter:
-        *  - La classe Voiture possède 4 attributs et 4 propriétés associées
-        *    -> Immatriculation
-        *    -> Couleur
-        *    -> Kilométrage
-        *    -> Marque
-        *  - La classe Voiture possède aussi une méthode publique
-        *    -> ParcourirDistance(...) fait parcourir une certaine quantité de kilomètres à
-        *       la voiture
-        *  - Immatriculation, Couleur et Marque ont un accesseur et un mutateur public
-        *  - Kilometrage possède aussi un accesseur public, mais son mutateur est privé.
-        *    -> Cela signifie que seule la classe Voiture peut modifier le kilometrage
-        *    -> Cette restrition d'accès nous permet de protégrer la valeur de kilometrage
-        *       et d'assurer que sa valeur toujours valide et cohérente.
-        *    -> En effet, le kilometrage qui ne peut diminuer, il ne peut qu'augmenter. Du
-        *       point de vue du programme client, la seule façon de modifier le kilometrage
-        *       passe par la méthode ParcourrirDistance, et cette méthode ne permet que
-        *       d'augmenter le kilometrage.
-        */
         static void Main(string[] args)
         {
             RunCar();

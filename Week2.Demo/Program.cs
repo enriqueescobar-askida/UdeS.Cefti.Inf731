@@ -1,46 +1,9 @@
 ﻿namespace Week2.Demo
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     class Program
     {
-        /*
-        *  Passage de paramètre par valeur et par référence
-        *
-        * À noter:
-        *  - En C#, il existe des types par valeur et des types par référence.
-        *    -> Les variables ayant un type par valeur contiennent directement une valeur.
-        *       Ainsi, lors d'une affectation sur une variable de type par valeur, la valeur
-        *       est copiée à l'intérieur de la variable.
-        *       => Les types primitif (int, float, bool) sont par valeur
-        *    -> Les variables ayant un type par référence pointent/font référence une valeur.
-        *       Contrairement au type par valeur, il ne contiennent pas directement leur valeur.
-        *       Lors de l'affectation sur une variable d'un type par référence, l'adresse de la
-        *       valeur est copiée à l'intérieur de la variable. Il est ainsi possible d'avoir
-        *       plusieurs variables par référence pointant sur la même valeur.
-        *       => Les types gros/complexe/demandant de l'allocation dynamique de mémoire (tableau,
-        *          objets, etc) sont par référence.
-        *
-        *  - Le passage de paramètre à une fonction peut aussi être par valeur ou par référence
-        *    -> Par default, le type de passage de paramètre dépend des types de paramètres:
-        *       => Les paramètres ayant un type par valeur sont passés par valeur
-        *       => Les paramètres ayant un type par copie sont passés par référence
-        *    -> Ainsi,
-        *         static void fonction(int entier)        =>  passage par valeur (int est un type par valeur)
-        *         static void fonction(ref int entier)    =>  passage par référence (int est un type par valeur, mais on force une référence à l'aide du mot clef 'ref')
-        *         static void fonction(int[] tableau)     =>  passage par référence (les tableaux sont toujours par référence)
-        *         static void fonction(ref int[] tableau) =>  passage par référence (référence sur une référence!)
-        *    -> Lorsqu'un paramètre de fonction est passé par valeur, toute modification effectuée
-        *       au paramètre est sans effet sur le paramètre utilisé dans l'appel puisque le valeur
-        *       est en fait copie.
-        *    -> Lorsqu'un paramètre de fonction est passé par référence, toute modification effectuée
-        *       au paramètre se répercutera sur la fonction appelante puisque la fonction reçoit une
-        *       référence sur la valeur.
-        */
         static void Main(string[] args)
         {
             Console.WriteLine("========================");

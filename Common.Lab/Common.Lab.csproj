@@ -43,9 +43,11 @@
     <Compile Include="Cup.cs" />
     <Compile Include="Employe.cs" />
     <Compile Include="EnumColors.cs" />
+    <Compile Include="Fun.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Lamp.cs" />
     <Compile Include="Operation.cs" />
+    <Compile Include="Quelconque.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Temperature.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

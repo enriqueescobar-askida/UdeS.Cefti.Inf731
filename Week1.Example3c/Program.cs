@@ -1,10 +1,7 @@
 ﻿namespace Week1.Example3c
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+
     class Program
     {
         const int NB_CASES = 10;
