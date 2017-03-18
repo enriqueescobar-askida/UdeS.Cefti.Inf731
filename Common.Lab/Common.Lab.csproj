@@ -47,6 +47,7 @@
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Lamp.cs" />
     <Compile Include="Operation.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Quelconque.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Student.cs" />

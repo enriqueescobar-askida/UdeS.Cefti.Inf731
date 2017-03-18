@@ -1,6 +1,7 @@
 ﻿namespace Week7.Lab
 {
     using System;
+    using System.Collections.Generic;
     using System.IO;
     using Common.Lab;
 
@@ -8,14 +9,44 @@
     {
         const int NB_CASES = 20;
         const string CHEMIN = "../../";
-        const string NOM_FICHIER = "test.txt";
+
         const int MAX = 1000;
         static void Main(string[] args)
         {
-// float[] tableau = RemplirTableau();
-// EcrireTableau(tableau);
-// TableauWriter();
+            float[] tableau = RemplirTableau();
+            EcrireTableau(tableau);
+            TableauWriter();
             Studentider();
+            Personifier();
+        }
+
+        private static void Personifier()
+        {
+            List<Person> liste = new List<Person>
+                                     {
+                                         new Person("Hector", 76),
+                                         new Person("Grégoire", 56),
+                                         new Person("Marie-Eve", 3),
+                                         new Person("Andréanne", 23),
+                                         new Person("Elphège", 95),
+                                         new Person("Jacqueline", 9),
+                                         new Person("Guy", 45),
+                                         new Person("Denis", 63)
+                                     };
+
+
+            liste.Sort();
+            PrintPersonList(liste);
+            Console.WriteLine("-----------------------------------------");
+
+            List<Person> travailleurs = liste.FindAll(item => item.IsActive);
+            PrintPersonList(travailleurs);
+        }
+        static void PrintPersonList(List<Person> uneListe)
+        {
+            for (int i = 0; i < uneListe.Count; ++i)
+                Console.WriteLine("{0} {1}", uneListe[i].Name.PadRight(15), uneListe[i].Age.ToString().PadLeft(2));
+            Console.In.ReadLine();
         }
 
         private static void Studentider()
