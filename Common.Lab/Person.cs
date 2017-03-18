@@ -23,5 +23,9 @@
             // return Compare(this.Name.ToUpper(), other.Name.ToUpper(), StringComparison.Ordinal);
             return -this.Age.CompareTo(other.Age);
         }
+        public override string ToString()
+        {
+            return this.Name.PadRight(15) + string.Format("{0:c2}", this.Age).PadLeft(7);
+        }
     }
 }

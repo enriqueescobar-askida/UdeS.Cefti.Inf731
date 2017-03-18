@@ -7,12 +7,18 @@
     {
         public Student(string aName)
         {
-            this.Name = aName;
+            this.FullName = aName;
+            this.Name = aName.Split(' ')[0];
+            this.FamilyName = aName.Split(' ')[2];
             this.MarksArray = new StudentMark[5];
             this.MarkList = new List<StudentMark>();
         }
 
+        public string FullName { get; internal set; }
         public string Name { get; internal set; }
+        public string FamilyName { get; internal set; }
+        public string CodePermanent { get; internal set; }
+        public int AdmissionId { get; internal set; }
 
         public StudentMark[] MarksArray { get; internal set; }
 
