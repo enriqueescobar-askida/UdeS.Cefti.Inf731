@@ -15,7 +15,6 @@
         static List<Car> LireVoitures()
         {
             List<Car> voitures = new List<Car>();
-
             bool lectureTermine = false; //la lecture n'est pas terminée
             while (!lectureTermine) //tant que la lecture n'est pas terminée
             {
@@ -42,11 +41,11 @@
                 }
                 catch (InvalidColorException ex)
                 {
-                    Console.WriteLine("Couleur invalide!");
+                    Console.WriteLine("Couleur invalide!\n" + ex.Message);
                 }
                 catch (InvalidModelException ex)
                 {
-                    Console.WriteLine("Modele invalide!");
+                    Console.WriteLine("Modele invalide!\n" + ex.Message);
                 }
                 catch (Exception ex)
                 {
