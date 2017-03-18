@@ -8,14 +8,19 @@
     {
         public int Age { get; internal set; }
         public string Name { get; internal set; }
-
+        public string FamilyName { get; internal set; }
         public bool IsActive { get; internal set; }
 
         public Person(string nom, int age)
         {
             this.Name = nom;
+            this.FamilyName = nom.Split(' ')[1];
             this.Age = age;
             this.IsActive = (age>=20 && age<=60) ;
+        }
+
+        public Person(string name, string familyName) : this(name + " " + familyName, 0)
+        {
         }
 
         public int CompareTo(Person other)
@@ -26,6 +31,10 @@
         public override string ToString()
         {
             return this.Name.PadRight(15) + string.Format("{0:c2}", this.Age).PadLeft(7);
+        }
+        public virtual string Afficher()
+        {
+            return String.Format("{0}, {1}", this.FamilyName, this.Name);
         }
     }
 }
