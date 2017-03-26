@@ -37,9 +37,11 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseClass.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="CarStatic.cs" />
     <Compile Include="CarWithEnumColors.cs" />
+    <Compile Include="ChildClass.cs" />
     <Compile Include="Cup.cs" />
     <Compile Include="Employe.cs" />
     <Compile Include="EntryLog.cs" />
