@@ -33,8 +33,6 @@
                                          new Person("Guy", 45),
                                          new Person("Denis", 63)
                                      };
-
-
             liste.Sort();
             PrintPersonList(liste);
             Console.WriteLine("-----------------------------------------");

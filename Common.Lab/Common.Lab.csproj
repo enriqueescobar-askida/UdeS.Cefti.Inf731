@@ -54,6 +54,9 @@
     <Compile Include="Person.cs" />
     <Compile Include="Quelconque.cs" />
     <Compile Include="Rectangle.cs" />
+    <Compile Include="RectangleShape.cs" />
+    <Compile Include="Shape.cs" />
+    <Compile Include="Shape2D.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="StudentMark.cs" />
     <Compile Include="Teacher.cs" />
