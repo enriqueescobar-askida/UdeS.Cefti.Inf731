@@ -10,6 +10,20 @@
     {
         static void Main(string[] args)
         {
+            Kiwi unKiwi = new Kiwi("Nouvelle Zélande", 36);
+            Orange uneOrange = new Orange("Floride", 48, "Navel");
+            Grapefruit g = new Grapefruit("Californie", 32, "Ruby Red", "Rose");
+            List<Fruit> liste = new List<Fruit>();
+            liste.Add(unKiwi);
+            liste.Add(g);
+            liste.Add(uneOrange);
+            foreach (Fruit fruit in liste)
+                Console.WriteLine(fruit);
+
+            ExampleOne();
+        }
+        static void ExampleOne()
+        {
             RectangleShape rs = new RectangleShape('%', 4, 5);
             Console.Out.WriteLine(rs);
             Console.WriteLine();
