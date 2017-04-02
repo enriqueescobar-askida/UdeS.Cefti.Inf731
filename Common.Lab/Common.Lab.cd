@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Common.Lab.Agrume" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Agrume.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Animal" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Common.Lab.BaseClass" Collapsed="true">
+    <Position X="8.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BaseClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Bird" Collapsed="true">
+    <Position X="4" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAgAAAAAA=</HashCode>
+      <FileName>Bird.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Car" Collapsed="true">
+    <Position X="7" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgEAAAIAAAAAAAAAAEAAEABAAAAAAgAAABAAAA=</HashCode>
+      <FileName>Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.CarStatic" Collapsed="true">
+    <Position X="10" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAgAAAAAAAAASAIAEAAEABAAAAAAAAAAAEQAA=</HashCode>
+      <FileName>CarStatic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.CarWithEnumColors" Collapsed="true">
+    <Position X="13" Y="9.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAIAAAAAAAAAAEAAEABAAAAAAAAAABAAAA=</HashCode>
+      <FileName>CarWithEnumColors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.ChildClass" Collapsed="true">
+    <Position X="8.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ChildClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Cup" Collapsed="true">
+    <Position X="15.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAIAAAEAAAAAAIAAAAABAAAAAAAAIAABAA=</HashCode>
+      <FileName>Cup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Employe" Collapsed="true">
+    <Position X="18.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAEAAAAAAAAAUAAAACAAAIAAkAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Employe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.EntryLog" Collapsed="true">
+    <Position X="7" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAAIAAAAAA=</HashCode>
+      <FileName>EntryLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Fruit" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Fruit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Fun" Collapsed="true">
+    <Position X="10" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Grapefruit" Collapsed="true">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Grapefruit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Insect" Collapsed="true">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Insect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.InvalidColorException" Collapsed="true">
+    <Position X="15.5" Y="10.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InvalidColorException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.InvalidModelException" Collapsed="true">
+    <Position X="18.5" Y="10.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InvalidModelException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.JournalLog" Collapsed="true">
+    <Position X="7" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>JournalLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Kiwi" Collapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kiwi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Lamp" Collapsed="true">
+    <Position X="10" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAQAAAAAAAAEgAAABBAIAQAAABQACgAABBAAAAA=</HashCode>
+      <FileName>Lamp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Mosquito" Collapsed="true">
+    <Position X="0.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAgAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mosquito.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Common.Lab.Operation" Collapsed="true">
+    <Position X="15.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAEgAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Operation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Orange" Collapsed="true">
+    <Position X="8" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Orange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Ostrich" Collapsed="true">
+    <Position X="5.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAIAAAAAAEAAAEgAAAAAABAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ostrich.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Common.Lab.Person" Collapsed="true">
+    <Position X="1.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQEEEAEQAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Common.Lab.Quelconque" Collapsed="true">
+    <Position X="18.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Quelconque.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Rectangle" Collapsed="true">
+    <Position X="7" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAEAAAA8AAQAAAAYAAAAGgAAAAAAAAAAA=</HashCode>
+      <FileName>Rectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.RectangleShape" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>RectangleShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Shape" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Shape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.HauteurInvalideException" Collapsed="true">
+    <Position X="13" Y="10.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Shape2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.LargeurInvalideException" Collapsed="true">
+    <Position X="13" Y="11.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Shape2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Shape2D" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAYAAIAAAAYAAAAGAAAAAAAAAAAA=</HashCode>
+      <FileName>Shape2D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Student" Collapsed="true">
+    <Position X="0.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACgAAIDEAAAAUAAEAAQCAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.StudentMark" Collapsed="true">
+    <Position X="10" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>StudentMark.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Swan" Collapsed="true">
+    <Position X="3" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAgAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Swan.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Common.Lab.Teacher" Collapsed="true">
+    <Position X="2.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAQAAAAAAEAAAAQAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Teacher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Temperature" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAIAQAAAAAAAAIAIAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Temperature.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Common.Lab.Test" Collapsed="true">
+    <Position X="15.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIAAAA=</HashCode>
+      <FileName>Test.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Lab.Triangle" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Triangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Common.Lab.IFly" Collapsed="true">
+    <Position X="7" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IFly.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Common.Lab.IWalk" Collapsed="true">
+    <Position X="10" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAIAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IWalk.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Common.Lab.EnumColors" Collapsed="true">
+    <Position X="7" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EnumColors.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

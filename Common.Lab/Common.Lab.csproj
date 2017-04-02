@@ -35,7 +35,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
-    <Folder Include="Doc\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Agrume.cs" />
@@ -80,6 +79,12 @@
     <Compile Include="Triangle.cs" />
     <Compile Include="InvalidColorException.cs" />
     <Compile Include="InvalidModelException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Common.Lab.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Doc\Common.Lab.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

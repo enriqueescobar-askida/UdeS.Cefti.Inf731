@@ -14,7 +14,9 @@
         public Person(string nom, int age)
         {
             this.Name = nom;
-            this.FamilyName = nom.Split(' ')[1];
+            this.FamilyName = (nom.Contains(" "))?
+                                nom.Split(' ')[1]
+                                : String.Empty;
             this.Age = age;
             this.IsActive = (age>=20 && age<=60) ;
         }
