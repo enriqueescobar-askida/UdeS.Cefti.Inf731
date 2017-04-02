@@ -35,10 +35,13 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <Folder Include="Doc\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Agrume.cs" />
+    <Compile Include="Animal.cs" />
     <Compile Include="BaseClass.cs" />
+    <Compile Include="Bird.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="CarStatic.cs" />
     <Compile Include="CarWithEnumColors.cs" />
@@ -51,11 +54,16 @@
     <Compile Include="Fun.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Grapefruit.cs" />
+    <Compile Include="IFly.cs" />
+    <Compile Include="Insect.cs" />
+    <Compile Include="IWalk.cs" />
     <Compile Include="JournalLog.cs" />
     <Compile Include="Kiwi.cs" />
     <Compile Include="Lamp.cs" />
+    <Compile Include="Mosquito.cs" />
     <Compile Include="Operation.cs" />
     <Compile Include="Orange.cs" />
+    <Compile Include="Ostrich.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Quelconque.cs" />
     <Compile Include="Rectangle.cs" />
@@ -64,6 +72,7 @@
     <Compile Include="Shape2D.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="StudentMark.cs" />
+    <Compile Include="Swan.cs" />
     <Compile Include="Teacher.cs" />
     <Compile Include="Temperature.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
