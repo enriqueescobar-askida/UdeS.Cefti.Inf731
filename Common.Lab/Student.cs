@@ -21,6 +21,16 @@
             this.AdmissionId = admissionId;
         }
 
+        public Student(Student student)
+            : base(student)
+        {
+            this.FullName = student.FullName;
+            this.CodePermanent = student.CodePermanent;
+            this.AdmissionId = student.AdmissionId;
+            this.MarksArray = student.MarksArray;
+            this.MarkList = student.MarkList;
+        }
+
         public string FullName { get; internal set; }
         public string CodePermanent { get; internal set; }
         public int AdmissionId { get; internal set; }

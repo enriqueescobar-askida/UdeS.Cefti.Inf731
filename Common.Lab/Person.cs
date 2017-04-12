@@ -2,8 +2,6 @@
 {
     using System;
 
-    using static System.String;
-
     public class Person : IComparable<Person>
     {
         public int Age { get; internal set; }
@@ -23,6 +21,14 @@
 
         public Person(string name, string familyName) : this(name + " " + familyName, 0)
         {
+        }
+
+        public Person(Person person)
+        {
+            this.Name = person.Name;
+            this.FamilyName = person.FamilyName;
+            this.Age = person.Age;
+            this.IsActive = person.IsActive;
         }
 
         public int CompareTo(Person other)
