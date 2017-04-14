@@ -69,7 +69,6 @@
         }
         private static void Redelegation()
         {
-            const int NoteMax = 100;
             Random g = new Random();
             List<int> liste = PeuplerListe(g);
             liste.ForEach(Console.WriteLine);

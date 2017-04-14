@@ -15,6 +15,7 @@ namespace Week12.Demo
 
         public VehiculeContainer()
         {
+            this.Vehicules = null;
         }
 
         public Vehicule this[int index]
