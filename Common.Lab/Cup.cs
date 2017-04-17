@@ -6,6 +6,16 @@
 
         int NbofMl;
 
+        public Cup()
+        {
+            this.Initialiser(0);
+        }
+
+        public Cup(int v)
+        {
+            this.NbofMl = v;
+        }
+
         public string Couleur { get; set; }
 
         public static int MaxCapacity { get { return maxCapacity; } set { maxCapacity = value; } }
@@ -40,6 +50,15 @@
             {
                 maxCapacity = this.NbofMl;
             }
+        }
+        public static explicit operator int(Cup uneTasse)
+        {
+            return uneTasse.NbMl;
+        }
+
+        public static implicit operator Cup(int valeur)
+        {
+            return new Cup(valeur);
         }
     }
 }
