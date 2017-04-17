@@ -67,6 +67,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week12.Lab", "Week12.Lab\We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week12And13.Demo", "Week12.Demo\Week12And13.Demo.csproj", "{B712CC34-2605-4456-87F8-C6AE86E49E39}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{4B111EDC-2F85-4C40-A618-9DF03CA98247}"
+	ProjectSection(SolutionItems) = preProject
+		UdeS.Cefti.Inf731_final.pdf = UdeS.Cefti.Inf731_final.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
