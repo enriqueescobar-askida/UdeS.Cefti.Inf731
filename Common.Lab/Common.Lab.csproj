@@ -37,6 +37,7 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractGun.cs" />
     <Compile Include="AbstractPizza.cs" />
     <Compile Include="Agrume.cs" />
     <Compile Include="AllDressPizza.cs" />
@@ -52,17 +53,20 @@
     <Compile Include="EntryLog.cs" />
     <Compile Include="EnumColors.cs" />
     <Compile Include="ExtremePizza.cs" />
+    <Compile Include="Fighter.cs" />
     <Compile Include="Fruit.cs" />
     <Compile Include="Fun.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Grapefruit.cs" />
     <Compile Include="HawaianPizza.cs" />
+    <Compile Include="IEvaluateDamage.cs" />
     <Compile Include="IFly.cs" />
     <Compile Include="Insect.cs" />
     <Compile Include="IWalk.cs" />
     <Compile Include="JournalLog.cs" />
     <Compile Include="Kiwi.cs" />
     <Compile Include="Lamp.cs" />
+    <Compile Include="Machete.cs" />
     <Compile Include="Mosquito.cs" />
     <Compile Include="Operation.cs" />
     <Compile Include="Orange.cs" />
@@ -72,6 +76,7 @@
     <Compile Include="Quelconque.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="RectangleShape.cs" />
+    <Compile Include="Revolver.cs" />
     <Compile Include="Shape.cs" />
     <Compile Include="Shape2D.cs" />
     <Compile Include="Student.cs" />

@@ -1,6 +1,7 @@
 ﻿namespace Week14.Lab
 {
     using System;
+    using System.Collections.Generic;
     using System.Linq;
 
     using Common.Lab;
@@ -11,6 +12,21 @@
         {
             CupOfTea();
             Pizzeria();
+            Army();
+        }
+
+        private static void Army()
+        {
+            List<Fighter> army = new List<Fighter>();
+            // à la création d'un combattant, on doit fournir son nom
+            // ainsi qu'une référence sur son arme.
+            army.Add(new Fighter("Voyou", new Machete(6)));
+            army.Add(new Fighter("Ordure", new Revolver(10)));
+            Console.WriteLine("Voici les dégats que peut faire notre armée : ");
+            Console.WriteLine();
+
+            foreach (Fighter c in army)
+                Console.WriteLine("{0} produit {1} points de dégâts", c.Name, c.Attack());
         }
 
         private static void Pizzeria()
