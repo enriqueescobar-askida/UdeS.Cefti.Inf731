@@ -1,6 +1,7 @@
 ﻿namespace Week14.Lab
 {
     using System;
+    using System.Linq;
 
     using Common.Lab;
 
@@ -9,6 +10,50 @@
         static void Main(string[] args)
         {
             CupOfTea();
+            Pizzeria();
+        }
+
+        private static void Pizzeria()
+        {
+            PizzaFactory fabrique = new PizzaFactory();
+
+            for (int i = 0; i < 5; ++i)
+            {
+                AbstractPizza p = fabrique.Instancier(ChoisirPizza(fabrique));
+                // pour indiquer le nom de la classe qui a été instanciée
+                Console.WriteLine(p.ToString());
+                Console.WriteLine();
+                Console.WriteLine(new string('-', 72));
+            }
+        }
+        // ChoisirPizza est placé ici puisque c'est ce programme qui sait
+        // quel genre d'interface il utilise
+        static string ChoisirPizza(PizzaFactory fabrique)
+        {
+            var liste = fabrique.ListeDesPizzas;
+            string retour = string.Empty;
+            bool choixEffectué = false;
+
+            while (!choixEffectué)
+            {
+                try
+                {
+                    int i = 1;
+                    foreach (string s in liste)
+                    {
+                        Console.WriteLine(i++ + ". " + s);
+                    }
+
+                    Console.Write("Donnez votre choix : ");
+                    retour = liste.ElementAt(int.Parse(Console.ReadLine()) - 1);
+                    choixEffectué = true;
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine(" *** Choix invalide au menu ***");
+                }
+            }
+            return retour;
         }
 
         private static void CupOfTea()

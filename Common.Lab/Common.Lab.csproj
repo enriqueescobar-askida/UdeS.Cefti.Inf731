@@ -37,7 +37,9 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractPizza.cs" />
     <Compile Include="Agrume.cs" />
+    <Compile Include="AllDressPizza.cs" />
     <Compile Include="Animal.cs" />
     <Compile Include="BaseClass.cs" />
     <Compile Include="Bird.cs" />
@@ -49,10 +51,12 @@
     <Compile Include="Employe.cs" />
     <Compile Include="EntryLog.cs" />
     <Compile Include="EnumColors.cs" />
+    <Compile Include="ExtremePizza.cs" />
     <Compile Include="Fruit.cs" />
     <Compile Include="Fun.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Grapefruit.cs" />
+    <Compile Include="HawaianPizza.cs" />
     <Compile Include="IFly.cs" />
     <Compile Include="Insect.cs" />
     <Compile Include="IWalk.cs" />
@@ -64,6 +68,7 @@
     <Compile Include="Orange.cs" />
     <Compile Include="Ostrich.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="PizzaFactory.cs" />
     <Compile Include="Quelconque.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="RectangleShape.cs" />
@@ -76,6 +81,7 @@
     <Compile Include="Temperature.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test.cs" />
+    <Compile Include="TomatoPizza.cs" />
     <Compile Include="Triangle.cs" />
     <Compile Include="InvalidColorException.cs" />
     <Compile Include="InvalidModelException.cs" />
