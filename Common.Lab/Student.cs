@@ -21,7 +21,7 @@
             this.AdmissionId = admissionId;
         }
 
-        public Student(Student student)
+        /*public Student(Student student)
             : base(student)
         {
             this.FullName = student.FullName;
@@ -29,6 +29,17 @@
             this.AdmissionId = student.AdmissionId;
             this.MarksArray = student.MarksArray;
             this.MarkList = student.MarkList;
+        }*/
+        public Student(Student existant)
+            : base(existant)
+        {
+            this.CodePermanent = existant.CodePermanent;
+        }
+
+        public Student(string name, string familyName, string noDossier)
+            : base(name, familyName)
+        {
+            this.CodePermanent = noDossier;
         }
 
         public string FullName { get; internal set; }
@@ -49,6 +60,17 @@
             string s = base.Afficher() + " | " + String.Format("{0} --- {1}", this.CodePermanent, this.AdmissionId);
 
             return s;
+        }
+        public override string Afficher2()
+        {
+            string s = base.Afficher();
+            s += "\n" + String.Format("Numéro de dossier : " + this.CodePermanent);
+            return s + "\n";
+        }
+
+        public override Person Clone()
+        {
+            return new Student(this);
         }
 
         public int MarkCounter { get; internal set; }

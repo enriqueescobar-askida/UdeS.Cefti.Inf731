@@ -5,7 +5,7 @@
     public class Person : IComparable<Person>
     {
         public int Age { get; internal set; }
-        public string Name { get; internal set; }
+        public string Name { get; set; }
         public string FamilyName { get; internal set; }
         public bool IsActive { get; internal set; }
 
@@ -23,12 +23,19 @@
         {
         }
 
-        public Person(Person person)
+        /*public Person(Person person)
         {
             this.Name = person.Name;
             this.FamilyName = person.FamilyName;
             this.Age = person.Age;
             this.IsActive = person.IsActive;
+        }*/
+        public Person(Person existant)
+        {
+            this.Name = existant.Name;
+            this.FamilyName = existant.FamilyName;
+            this.Age = 0;
+            this.IsActive = false;
         }
 
         public int CompareTo(Person other)
@@ -43,6 +50,20 @@
         public virtual string Afficher()
         {
             return String.Format("{0}, {1}", this.FamilyName, this.Name);
+        }
+        public virtual string Afficher2()
+        {
+            string s = new string('-', 72);
+            s += "\n" + String.Format("{0}, {1}", this.FamilyName, this.Name);
+            return s + "\n";
+        }
+        /// <summary>
+        /// Méthode polymorphique qui produit une copie de l'instance qui y fait appel. Notez la signature !
+        /// </summary>
+        /// <returns>Une instance de Personne</returns>
+        public virtual Person Clone()
+        {
+            return new Person(this);
         }
     }
 }

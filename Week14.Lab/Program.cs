@@ -10,9 +10,61 @@
     {
         static void Main(string[] args)
         {
+            Classroom();
+            Army();
             CupOfTea();
             Pizzeria();
-            Army();
+        }
+
+        private static void Classroom()
+        {
+            List<Person> liste = new List<Person>();
+            liste.Add(new Teacher("Roy", "Patrice", 67));
+            liste.Add(new Person("Delarue", "Homme"));
+            liste.Add(new Student("Rocher", "Yvon", "123321"));
+
+            foreach (Person p in liste)
+                Afficher(p);
+            
+            Console.WriteLine("===================================================");
+            Console.WriteLine();
+            // Création d'une nouvelle liste à partir de l'ancienne ->> shallow copy
+            //-------------------------------------------------------------------------
+            List<Person> nouvelleListe = ReproduireListe(liste);
+
+            foreach (Person p in nouvelleListe)
+            {
+                Modifier(p);
+                Afficher(p);
+            }
+            Console.WriteLine("===================================================");
+            Console.WriteLine();
+
+            // observons le contenu de la première liste ...
+            foreach (Person p in liste)
+                Afficher(p);
+            
+            Console.WriteLine("=============================================");
+        }
+        static List<Person> ReproduireListe(List<Person> listeOriginale)
+        {
+            List<Person> listeNouvelle = new List<Person>();
+
+            foreach (Person p in listeOriginale)
+                listeNouvelle.Add(p.Clone());
+            
+            return listeNouvelle;
+        }
+        static void Modifier(Person p)
+        {
+            p.Name = p.Name + " - Zazou";
+        }
+        static void Afficher(Person p)
+        {
+            // il faut bien voir qu'on affiche la copie de l'objet
+            // original, ce qui assure bien que peu importe notre
+            // action sur l'objet, l'original restera intact
+            Console.Out.WriteLine(p.Afficher2());
         }
 
         private static void Army()
