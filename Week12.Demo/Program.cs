@@ -4,11 +4,44 @@
     using System.Collections.Generic;
     using System.Linq;
 
+    using Common.Lab;
+
     class Program
     {
         static void Main(string[] args)
         {
             Twelve();
+            Thirteen();
+            Tempo();
+        }
+
+        private static void Tempo()
+        {
+            List<Temperature> listeTemperatures = new List<Temperature>();
+            Random aléatoire = new Random();
+
+            // Chargement de la liste par des valeurs aléatoires
+            for (int i = 0; i < 10; i++)
+            {
+                Temperature températureLocale = new Temperature(aléatoire.Next(-100, 100));
+                listeTemperatures.Add(températureLocale);
+            }
+
+            // On affiche la liste initiale
+            AfficherListeTempérature(listeTemperatures);
+            Console.WriteLine("------------------------------------");
+            Console.ReadKey();
+            // Tri de la liste 
+            listeTemperatures.Sort();
+
+            // On affiche la liste triée
+            AfficherListeTempérature(listeTemperatures);
+        }
+
+        private static void AfficherListeTempérature(List<Temperature> listeTemperatures)
+        {
+            foreach (Temperature temp in listeTemperatures)
+                Console.WriteLine("Celsius:{0,4}  ---Fahrenheit: {1,6}", temp.Celsius, temp.Fahrenheit);
         }
 
         private static void Twelve()

@@ -19,7 +19,29 @@
             //Redelegation();
             Redelegating();
             Console.In.ReadLine();
+            Animalia();
         }
+
+        private static void Animalia()
+        {
+            List<Animal> lesAnimaux = new List<Animal>();
+            lesAnimaux.Add(new Swan(125));
+            lesAnimaux.Add(new Ostrich(80500));
+            lesAnimaux.Add(new Mosquito(1));
+
+            List<IFly> listeVolants = lesAnimaux.OfType<IFly>().ToList();
+            foreach (IFly v in listeVolants)
+                v.Decoller();
+
+            lesAnimaux.Sort();
+            Console.WriteLine();
+            foreach (Animal a in lesAnimaux)
+            {
+                Console.Write(a.ToString() + " a un poids de ");
+                Console.WriteLine(a.Weight);
+            }
+        }
+
         private static void Redelegating()
         {
             Random g = new Random(15);  // pour avoir la même liste à chaque exécution
