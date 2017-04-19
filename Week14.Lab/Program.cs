@@ -10,11 +10,48 @@
     {
         static void Main(string[] args)
         {
+            ActionFactory();
             Classroom();
             Army();
             CupOfTea();
             MaxFactor();
             Pizzeria();
+        }
+
+        private static void ActionFactory()
+        {
+            Client pierre = new Client("Pierre");
+            Client luc = new Client("Luc");
+
+            Actio google = new MacroAction(120);
+            Actio microsoft = new MicroAction(200);
+            Actio tesla = new MiniAction(500);
+
+
+            luc.Ajouter(google, 100);
+            luc.Ajouter(tesla, 200);
+            pierre.Ajouter(google, 300);
+            pierre.Ajouter(microsoft, 400);
+            Console.WriteLine("Le cours de Microsoft change");
+            Console.WriteLine(new string('-', 70));
+            microsoft.ModifierCours(390);
+            Console.ReadKey();
+            Console.WriteLine();
+            Console.WriteLine(new string('*', 75));
+            Console.WriteLine();
+            Console.WriteLine("Le cours de Google change");
+            Console.WriteLine(new string('-', 70));
+            google.ModifierCours(120);
+            Console.WriteLine();
+            Console.WriteLine(new string('*', 75));
+            Console.WriteLine();
+            Console.ReadKey();
+            Console.WriteLine("Le cours de Tesla change");
+            Console.WriteLine(new string('-', 70));
+            tesla.ModifierCours(201);
+            Console.WriteLine();
+            Console.WriteLine(new string('*', 75));
+            Console.WriteLine();
         }
 
         private static void MaxFactor()

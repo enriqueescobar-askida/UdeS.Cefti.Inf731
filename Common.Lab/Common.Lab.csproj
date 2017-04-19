@@ -37,8 +37,10 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractSubject.cs" />
     <Compile Include="AbstractGun.cs" />
     <Compile Include="AbstractPizza.cs" />
+    <Compile Include="Actio.cs" />
     <Compile Include="Agrume.cs" />
     <Compile Include="AllDressPizza.cs" />
     <Compile Include="Animal.cs" />
@@ -48,6 +50,7 @@
     <Compile Include="CarStatic.cs" />
     <Compile Include="CarWithEnumColors.cs" />
     <Compile Include="ChildClass.cs" />
+    <Compile Include="Client.cs" />
     <Compile Include="Cup.cs" />
     <Compile Include="Employe.cs" />
     <Compile Include="EntryLog.cs" />
@@ -62,11 +65,15 @@
     <Compile Include="IEvaluateDamage.cs" />
     <Compile Include="IFly.cs" />
     <Compile Include="Insect.cs" />
+    <Compile Include="IObservable.cs" />
     <Compile Include="IWalk.cs" />
     <Compile Include="JournalLog.cs" />
     <Compile Include="Kiwi.cs" />
     <Compile Include="Lamp.cs" />
     <Compile Include="Machete.cs" />
+    <Compile Include="MacroAction.cs" />
+    <Compile Include="MicroAction.cs" />
+    <Compile Include="MiniAction.cs" />
     <Compile Include="Mosquito.cs" />
     <Compile Include="Operation.cs" />
     <Compile Include="Orange.cs" />
