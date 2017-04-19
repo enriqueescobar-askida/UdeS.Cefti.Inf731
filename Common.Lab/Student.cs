@@ -33,6 +33,7 @@
         public Student(Student existant)
             : base(existant)
         {
+            this.AdmissionId = existant.AdmissionId;
             this.CodePermanent = existant.CodePermanent;
         }
 
@@ -40,6 +41,12 @@
             : base(name, familyName)
         {
             this.CodePermanent = noDossier;
+        }
+        public Student(string nom, string prénom, string[] tableau)
+            : base(nom, prénom)
+        {
+            this.AdmissionId = int.Parse(tableau[0]);
+            this.CodePermanent = tableau[1];
         }
 
         public string FullName { get; internal set; }
@@ -61,10 +68,20 @@
 
             return s;
         }
+
         public override string Afficher2()
         {
             string s = base.Afficher();
             s += "\n" + String.Format("Numéro de dossier : " + this.CodePermanent);
+            return s;
+        }
+
+
+        public string Afficher3()
+        {
+            string s = base.Afficher();
+            s += "\n" + String.Format("No admission : {0}", this.AdmissionId);
+            s += "\n" + String.Format("Numéro de dossier : {1}", this.CodePermanent);
             return s + "\n";
         }
 

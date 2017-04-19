@@ -62,19 +62,21 @@
         {
             const int Min = 0;
             const int Max = 127;
-            List<Person> liste = new List<Person>();
-            liste.Add(new Person("Luc", g.Next(Min, Max + 1)));
-            liste.Add(new Person("Paul", g.Next(Min, Max + 1)));
-            liste.Add(new Person("Guy", g.Next(Min, Max + 1)));
-            liste.Add(new Person("Anne", g.Next(Min, Max + 1)));
-            liste.Add(new Person("Jean", g.Next(Min, Max + 1)));
-            liste.Add(new Person("Marc", g.Next(Min, Max + 1)));
-            liste.Add(new Person("Bob", g.Next(Min, Max + 1)));
-            liste.Add(new Person("John", g.Next(Min, Max + 1)));
-            liste.Add(new Person("Fred", g.Next(Min, Max + 1)));
-            liste.Add(new Person("Q", g.Next(Min, Max + 1)));
-            liste.Add(new Person("Ella", 123));
-            liste.Add(new Person("Edward", 123));
+            List<Person> liste = new List<Person>
+                                     {
+                                         new Person("Luc", g.Next(Min, Max + 1)),
+                                         new Person("Paul", g.Next(Min, Max + 1)),
+                                         new Person("Guy", g.Next(Min, Max + 1)),
+                                         new Person("Anne", g.Next(Min, Max + 1)),
+                                         new Person("Jean", g.Next(Min, Max + 1)),
+                                         new Person("Marc", g.Next(Min, Max + 1)),
+                                         new Person("Bob", g.Next(Min, Max + 1)),
+                                         new Person("John", g.Next(Min, Max + 1)),
+                                         new Person("Fred", g.Next(Min, Max + 1)),
+                                         new Person("Q", g.Next(Min, Max + 1)),
+                                         new Person("Ella", 123),
+                                         new Person("Edward", 123)
+                                     };
             return liste;
         }
         private static List<int> PeuplerListe(Random random)

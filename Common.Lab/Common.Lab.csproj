@@ -72,6 +72,7 @@
     <Compile Include="Orange.cs" />
     <Compile Include="Ostrich.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="PersonFactory.cs" />
     <Compile Include="PizzaFactory.cs" />
     <Compile Include="Quelconque.cs" />
     <Compile Include="Rectangle.cs" />

@@ -13,15 +13,47 @@
             Classroom();
             Army();
             CupOfTea();
+            MaxFactor();
             Pizzeria();
+        }
+
+        private static void MaxFactor()
+        {
+            PersonFactory fabrique = new PersonFactory();
+            List<Person> liste = new List<Person>
+                                     {
+                                         fabrique.Instancier("Personne", "Rocher", "Yvon"),
+                                         fabrique.Instancier(
+                                             "Étudiant",
+                                             "Einstein",
+                                             "Albert",
+                                             new string[] { "201455607", "Physique" }),
+                                         fabrique.Instancier(
+                                             "Employé",
+                                             "Jobs",
+                                             "Steve",
+                                             new string[] { "222-777-555" })
+                                     };
+
+            Console.WriteLine("Liste des types que la fabrique peut instancier : ");
+            Console.WriteLine(new string('*', 72));
+            foreach (string entité in fabrique.ListeDesEntités)
+                Console.WriteLine(entité);
+            
+            Console.WriteLine(new string('*', 72));
+            Console.WriteLine();
+            foreach (Person p in liste)
+                Console.WriteLine(p.Afficher() + new string('-', 75));
         }
 
         private static void Classroom()
         {
-            List<Person> liste = new List<Person>();
-            liste.Add(new Teacher("Roy", "Patrice", 67));
-            liste.Add(new Person("Delarue", "Homme"));
-            liste.Add(new Student("Rocher", "Yvon", "123321"));
+            List<Person> liste = new List<Person>
+                                     {
+                                         new Teacher("Roy", "Patrice", 67),
+                                         new Person("Delarue", "Homme"),
+                                         new Student("Rocher", "Yvon", "123321")
+                                     };
 
             foreach (Person p in liste)
                 Afficher(p);
@@ -69,11 +101,13 @@
 
         private static void Army()
         {
-            List<Fighter> army = new List<Fighter>();
+            List<Fighter> army = new List<Fighter>
+                                     {
+                                         new Fighter("Voyou", new Machete(6)),
+                                         new Fighter("Ordure", new Revolver(10))
+                                     };
             // à la création d'un combattant, on doit fournir son nom
             // ainsi qu'une référence sur son arme.
-            army.Add(new Fighter("Voyou", new Machete(6)));
-            army.Add(new Fighter("Ordure", new Revolver(10)));
             Console.WriteLine("Voici les dégats que peut faire notre armée : ");
             Console.WriteLine();
 
